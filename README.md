@@ -1,2 +1,1 @@
-# docker-emacs
-Emacs in Docker
+Emacs in Docker.

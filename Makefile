@@ -7,7 +7,7 @@ TEST = docker run --rm -it -v $(CURDIR):/app \
 #-------------------------------------------------------------------------------
 
 build:
-	docker build -t mbodenhamer/emacs:latest .
+	$(TEST) docker build -t mbodenhamer/emacs:latest .
 
 shell:
 	xhost +local:docker

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install pip
+apt-get clean
 apt-get update && apt-get install -y \
     python-pip \
     && rm -rf /var/lib/apt/lists/* \

@@ -5,6 +5,7 @@ MAINTAINER Matt Bodenhamer <mbodenhamer@mbodenhamer.com>
 ONBUILD ARG provision=provision.sh
 ONBUILD COPY $provision /root/provision.sh
 ONBUILD RUN chmod +x /root/provision.sh \
+	&& sync \
 	&& /root/provision.sh \
 	&& rm /root/provision.sh
 

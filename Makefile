@@ -1,7 +1,8 @@
 all: test
 
 TEST = docker run --rm -it -v $(CURDIR):/app \
-	-v /var/run/docker.sock:/var/run/docker.sock mbodenhamer/docker-test
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	mbodenhamer/docker-test:1.9.1
 
 #-------------------------------------------------------------------------------
 

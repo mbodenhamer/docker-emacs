@@ -37,4 +37,4 @@ This image uses `ONBUILD` instructions to build a custom Emacs setup. The build 
 * `gid`: GID of the user to use Emacs as. If not supplied as a `--build-arg`, will default to 1000.
 
 
-An example Docker application using these onbuild features to install [Elpy](https://github.com/jorgenschaefer/elpy) can be found in [`tests/elpy/`](https://github.com/mbodenhamer/docker-docker-test/tree/onbuild/tests/elpy).
+An example Docker application using these onbuild features to install [Elpy](https://github.com/jorgenschaefer/elpy) can be found in [`tests/elpy/`](https://github.com/mbodenhamer/docker-emacs/tree/onbuild/tests/elpy).

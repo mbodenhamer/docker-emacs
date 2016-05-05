@@ -4,7 +4,6 @@ load test_helpers
 NULL_IMAGE=emacs-onbuild-test-null
 
 @test "[$TEST_FILE] Build null image" {
-    set -x
     run docker build -t ${NULL_IMAGE}:latest ${TEST_DIR}/null
     [ $status = 0 ]
 }

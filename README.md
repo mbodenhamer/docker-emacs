@@ -25,16 +25,18 @@ Emacs can also be started in console mode:
 Whatever directory you want emacs to access should be mapped to the `/files` volume.
 
 
-mbodenhamer/emacs:onbuild
--------------------------
+Tags
+----
 
-This image uses `ONBUILD` instructions to build a custom Emacs setup. The build arguments are as follows:
+### `onbuild`
 
-* `provision`: Path to a script that will run arbitrary provisioning actions. If not supplied as a `--build-arg`, will default to `provision.sh`.
-* `packages`: Path to an elisp script that will perform package installation / configuration actions. If not supplied as a `--build-arg`, will default to `packages.el`.
-* `conf`: Path to a file that will be copied to `~/.emacs` in the container. If not supplied as a `--build-arg`, will default to `.emacs`.
-* `uid`: UID of the user to use Emacs as. If not supplied as a `--build-arg`, will default to 1000.
-* `gid`: GID of the user to use Emacs as. If not supplied as a `--build-arg`, will default to 1000.
+`mbodenhamer/emacs:onbuild` uses `ONBUILD` instructions to enable a custom Emacs setup. The build arguments are as follows:
+
+* `provision`: Path to a script that will run arbitrary provisioning actions. Defaults to `provision.sh`.
+* `packages`: Path to an elisp script that will perform package installation / configuration actions. Defaults to `packages.el`.
+* `conf`: Path to a file that will be copied to `~/.emacs` in the container. Defaults to `.emacs`.
+* `uid`: UID of the user to use Emacs as. Defaults to 1000.
+* `gid`: GID of the user to use Emacs as. Defaults to 1000.
 
 
-An example Docker application using these onbuild features to install [Elpy](https://github.com/jorgenschaefer/elpy) can be found in [`tests/elpy/`](https://github.com/mbodenhamer/docker-emacs/tree/onbuild/tests/elpy).
+[`mbodenhamer/emacs-elpy`](https://hub.docker.com/r/mbodenhamer/emacs-elpy/) is an example of a Docker application that uses these onbuild features to install [Elpy](https://github.com/jorgenschaefer/elpy).

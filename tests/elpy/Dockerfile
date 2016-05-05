@@ -1,2 +1,2 @@
-FROM mbodenhamer/emacs:bats-onbuild
+FROM mbodenhamer/emacs:onbuild
 

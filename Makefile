@@ -14,7 +14,7 @@ shell:
 #-------------------------------------------------------------------------------
 
 build:
-	$(TEST) docker build -t mbodenhamer/emacs:bats .
+	$(TEST) docker build -t mbodenhamer/emacs:bats-onbuild .
 
 quick-test:
 	$(TEST) bats tests

@@ -1,4 +1,4 @@
-[![](https://travis-ci.org/mbodenhamer/docker-emacs.svg?branch=onbuild)](https://travis-ci.org/mbodenhamer/docker-emacs)
+[![](https://travis-ci.org/mbodenhamer/docker-emacs.svg?branch=master)](https://travis-ci.org/mbodenhamer/docker-emacs)
 
 Emacs in Docker.
 

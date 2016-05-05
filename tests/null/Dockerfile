@@ -1,0 +1,2 @@
+FROM mbodenhamer/emacs:onbuild
+

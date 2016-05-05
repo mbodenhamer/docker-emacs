@@ -11,7 +11,8 @@ build:
 
 shell:
 	xhost +local:docker
-	docker run --rm -it -v $(CURDIR):/files -v /tmp/.X11-unix:/tmp/.X11-unix \
+	docker run --rm -it -v $(CURDIR):/files \
+	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	-e DISPLAY --entrypoint bash mbodenhamer/emacs
 
 .PHONY: build shell
